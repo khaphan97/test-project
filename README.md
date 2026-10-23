@@ -1,6 +1,6 @@
-# Maple EXP Tracker for Windows
+# Desktop test project
 
-[Download the latest installer](https://github.com/khaphan97/maple-exp-tracker-releases/releases/latest)
+[Download the latest installer](https://github.com/khaphan97/test-project/releases/latest)
 
 This repository contains Windows installers, SHA-256 checksums and the signed update feed. Application source is maintained separately.
 
