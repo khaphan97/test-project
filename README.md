@@ -10,11 +10,15 @@ Download the `MapleExpTracker-<version>-x64.msi` asset from the latest release. 
 
 Windows 10 version 1903 or later (x64) or Windows 11 is required. No Python, Rust, .NET, CUDA or Windows OCR language packs are needed on the receiving PC.
 
+## Saved sessions
+
+From 1.0.4, open **History** and choose **Delete → Delete permanently** on the saved session you want to remove. **Cancel** keeps it. Deletion is saved immediately, and the current tracking session continues.
+
 ## Updates
 
 Users on 0.1.x must install 1.0.0 or later once. Subsequent releases can be downloaded and installed from the app's update notification or its right-click **Check for updates…** menu. No GitHub account is needed. From version 1.0.3, the app checks in the background every time it opens and shows an update-available popup when a newer version is found. Each launch requests a fresh feed to avoid stale release redirects. Current versions and network failures stay quiet. Installation only runs when requested.
 
-The updater verifies the installer signature, checkpoints the current session, and closes the tracker to run the upgrade. Reopen the tracker after installation. Postponing an update leaves tracking running.
+The update popup includes a Maple-style changelog with Vietnamese release notes. The updater verifies the installer signature, checkpoints the current session, and closes the tracker to run the upgrade. Reopen the tracker after installation. Postponing an update leaves tracking running.
 
 The MSI has an Ed25519 update signature, but does not currently carry a Windows Authenticode publisher certificate.
 
