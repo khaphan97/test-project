@@ -12,7 +12,7 @@ Windows 10 version 1903 or later (x64) or Windows 11 is required. No Python, Rus
 
 ## Updates
 
-Users on 0.1.x must install 1.0.0 or later once. Subsequent releases can be downloaded and installed from the app's update notification or its right-click **Check for updates…** menu. No GitHub account is needed. The app checks in the background at its daily interval and installs only when requested.
+Users on 0.1.x must install 1.0.0 or later once. Subsequent releases can be downloaded and installed from the app's update notification or its right-click **Check for updates…** menu. No GitHub account is needed. From version 1.0.2, the app checks in the background every time it opens and shows an update-available popup when a newer version is found. Current versions and network failures stay quiet. Installation only runs when requested.
 
 The updater verifies the installer signature, checkpoints the current session, and closes the tracker to run the upgrade. Reopen the tracker after installation. Postponing an update leaves tracking running.
 
