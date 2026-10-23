@@ -18,7 +18,9 @@ From 1.0.4, open **History** and choose **Delete → Delete permanently** on the
 
 Users on 0.1.x must install 1.0.0 or later once. Subsequent releases can be downloaded and installed from the app's update notification or its right-click **Check for updates…** menu. No GitHub account is needed. From version 1.0.3, the app checks in the background every time it opens and shows an update-available popup when a newer version is found. Each launch requests a fresh feed to avoid stale release redirects. Current versions and network failures stay quiet. Installation only runs when requested.
 
-The update popup includes a Maple-style changelog with Vietnamese release notes. The updater verifies the installer signature, checkpoints the current session, and closes the tracker to run the upgrade. Reopen the tracker after installation. Postponing an update leaves tracking running.
+From 1.0.5, the notification is a borderless Maple-style card with Vietnamese release notes and matching **Cập nhật ngay** / **Để sau** buttons. It sizes itself to the content, supports Vietnamese accents and scrolls long changelogs. Older clients keep their existing notification until upgraded. Mini's right-click menu also scrolls so every command stays reachable.
+
+After you choose to update, WinSparkle shows download progress, verifies the installer signature, checkpoints the current session, and closes the tracker to run the upgrade. Reopen the tracker after installation. Postponing an update leaves tracking running. Version 1.0.5 also fixes older clients incorrectly filtering out updates because their EXE lacks a Windows compatibility manifest.
 
 The MSI has an Ed25519 update signature, but does not currently carry a Windows Authenticode publisher certificate.
 
