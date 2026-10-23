@@ -20,7 +20,9 @@ Users on 0.1.x must install 1.0.0 or later once. Subsequent releases can be down
 
 From 1.0.5, the notification is a borderless Maple-style card with Vietnamese release notes and matching **Cập nhật ngay** / **Để sau** buttons. It sizes itself to the content, supports Vietnamese accents and scrolls long changelogs. Older clients keep their existing notification until upgraded. Mini's right-click menu also scrolls so every command stays reachable.
 
-After you choose to update, WinSparkle shows download progress, verifies the installer signature, checkpoints the current session, and closes the tracker to run the upgrade. Reopen the tracker after installation. Postponing an update leaves tracking running. Version 1.0.5 also fixes older clients incorrectly filtering out updates because their EXE lacks a Windows compatibility manifest.
+After you choose to update, WinSparkle shows download progress and verifies the installer signature. From 1.0.8, the app saves its session and closes; a helper waits for it to exit, runs the installer with normalized Windows paths and a verbose log, then checks both the exit code and the installed EXE's product version. It shows **Cập nhật thành công** only after verification; press **OK** to reopen the app. Failures show an error and log path. Postponing an update leaves tracking running.
+
+Successful updates remove obsolete installer caches and temporary files, retain only the current source installer for Windows Installer repair, and keep at most three logs per retained cache location. Session history, settings and the Windows Installer system cache are preserved. If an older updater downloads a release but closes without installing it, run the 1.0.8-or-later MSI once to receive the fixed update flow.
 
 The MSI has an Ed25519 update signature, but does not currently carry a Windows Authenticode publisher certificate.
 
